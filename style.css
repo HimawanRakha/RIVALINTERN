@@ -1,0 +1,95 @@
+body {
+  background-color: rgb(255, 255, 255);
+  size: cover;
+}
+body,
+html {
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+.parallax {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 110vh;
+  overflow: hidden;
+}
+#text {
+  position: absolute;
+  font-size: 3cm;
+  color: white;
+  z-index: 50;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.parallax img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+}
+#ourteam {
+  position: relative;
+  background: #003329;
+}
+
+#plant {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+.typing {
+  width: 79%;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #ffffff;
+  animation: typing 10s steps(12, end) 1s infinite, blink-caret 0.5s step-end infinite, cursor 0.5s steps(12, end) infinite;
+}
+@keyframes typing {
+  0%,
+  90% {
+    width: 0;
+  }
+  20%,
+  60% {
+    width: 80%;
+  }
+  70%,
+  100% {
+    width: 0;
+  }
+}
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+footer {
+  position: relative;
+  background: #003329;
+  padding: 30px;
+}
+.navbar-nav {
+  margin: 0 auto;
+  margin-right: 400px;
+}
+.navbar {
+  background-color: transparent !important;
+}
+#leaf {
+  position: fixed;
+  top: -60px;
+  left: 0;
+  z-index: 1050;
+}
+/* Style untuk ikon */
+.icon {
+  color: white;
+  font-size: 1.2em;
+}
+
+/* Style untuk teks yang lebih rapi */
+.text-white {
+  color: white;
+}
